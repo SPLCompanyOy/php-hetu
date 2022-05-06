@@ -13,7 +13,7 @@ This simple class validates social security numbers and provides methods for che
 The recommended way is to install the lib [through Composer](http://getcomposer.org/).
 
 ```
-composer require devsmo/php-hetu
+composer require splcompanyoy/php-hetu
 ```
 
 Or you can add this to your composer.json
@@ -34,7 +34,7 @@ You can initialize the object in two ways:
 ```php
 <?php
 
-$hetu = devsmo\Hetu::create('041281-981T');
+$hetu = Devsmo\Hetu::create('041281-981T');
 
 if ( $hetu ) {
 	echo "It's valid";
@@ -49,7 +49,7 @@ Or if you want to catch possible errors:
 <?php
 
 try {
-	$hetu = new devsmo\Hetu('041281-981T');
+	$hetu = new Devsmo\Hetu('041281-981T');
 }
 catch (\InvalidArgumentException $e){
 	$msg = $e->getMessage();
