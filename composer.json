@@ -1,5 +1,5 @@
 {
-    "name": "Devsmo/php-hetu",
+    "name": "devsmo/php-hetu",
     "type": "library",
     "description": "PHP Hetu validator. Hetu stands for Henkilötunnus aka Finnish Social Security Number",
     "keywords": [],
