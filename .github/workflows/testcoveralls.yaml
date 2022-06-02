@@ -16,7 +16,7 @@ jobs:
           configuration: phpunit.xml.dist
           php_extensions: xdebug
           bootstrap: vendor/autoload.php
-          args: --coverage-clover=clover.xml -v
+          args: --coverage-clover=build/logs/clover.xml -v
         env:
           XDEBUG_MODE: coverage
 
