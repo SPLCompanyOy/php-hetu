@@ -16,7 +16,7 @@ jobs:
           configuration: phpunit.xml.dist
           php_extensions: xdebug
           bootstrap: vendor/autoload.php
-          args: --coverage-clover=build/logs/clover.xml -v
+          args: --coverage-clover=clover.xml -v
         env:
           XDEBUG_MODE: coverage
 
@@ -25,4 +25,4 @@ jobs:
           COVERALLS_SERVICE_NAME: github
           COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-            ./vendor/bin/php-coveralls -v
+            ./vendor/bin/php-coveralls -c .coveralls.yml -v
