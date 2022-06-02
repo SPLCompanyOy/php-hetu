@@ -17,6 +17,8 @@ jobs:
           php_extensions: xdebug
           bootstrap: vendor/autoload.php
           args: --coverage-clover=build/logs/clover.xml -v
+        env:
+          XDEBUG_MODE: coverage
 
       - name: Upload coverage results to Coveralls
         env:
