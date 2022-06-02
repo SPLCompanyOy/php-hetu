@@ -14,6 +14,9 @@ jobs:
       - uses: php-actions/phpunit@v3
         with:
           configuration: phpunit.xml.dist
+          php_extensions: xdebug
+          bootstrap: vendor/autoload.php
+          args: --coverage-clover=build/logs/clover.xml -v
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
