@@ -1,5 +1,7 @@
 # php-hetu
 
+[![Coverage Status](https://coveralls.io/repos/github/SPLCompanyOy/php-hetu/badge.svg?branch=master)](https://coveralls.io/github/SPLCompanyOy/php-hetu?branch=master)
+
 Finnish Social Security number validator.
 
 This simple class validates social security numbers and provides methods for checking birthdate, age and gender based on the 'hetu'.
