@@ -25,4 +25,4 @@ jobs:
           COVERALLS_SERVICE_NAME: github
           COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-            ./vendor/bin/php-coveralls -c .coveralls.yml -v
+            ./vendor/bin/php-coveralls -r -c .coveralls.yml -v
