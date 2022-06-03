@@ -1,3 +1,2 @@
 service_name: github-actions
-coverage_clover: /home/runner/work/php-hetu/php-hetu/lib/php/build/logs/clover.xml
-json_path: coveralls-upload.json
+json_path: ~/work/php-hetu/php-hetu/coveralls-upload.json
