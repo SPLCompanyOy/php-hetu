@@ -20,6 +20,9 @@ jobs:
         env:
           XDEBUG_MODE: coverage
 
+      - name: Check files
+        run: ls -al
+
       - name: Upload coverage results to Coveralls
         env:
           COVERALLS_SERVICE_NAME: github
