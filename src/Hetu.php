@@ -13,10 +13,6 @@ use Devsmo\Exceptions\InvalidYearException;
 
 class Hetu {
 
-
-    public const FEMALE = 'female';
-    public const MALE = 'male';
-
 	public string $hetu;
 	public $parts = null;
 
@@ -125,18 +121,6 @@ class Hetu {
 			case '-': return 1900;
 			case 'A': return 2000;
 			default: return null;
-		}
-	}
-
-	/**
-	 * getGender
-	 * Get the sex based on the hetu
-	 * @return String, 'male' or 'female'
-	 */
-	public function getGender() {
-		switch ( $this->parts->id & 1 ) {
-			case 0: return self::FEMALE;
-			case 1: return self::MALE;
 		}
 	}
 }
